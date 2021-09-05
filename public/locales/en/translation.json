@@ -1,0 +1,229 @@
+{
+  "name": "Kwarm",
+  "hello": "Hello World",
+  "test": "Test",
+  "login": {
+    "emailOrID": "Email Or ID",
+    "req_msg_emailOrID": "Please Enter Your Email Or ID",
+    "password": "Password",
+    "req_msg_password": "Please Enter Your Password",
+    "submit": "Submit",
+    "remember_me": "Remember Me",
+    "forgot_password": "Forgot Password?",
+    "verify_code": "Verify Code",
+    "req_msg_verify_code": "Please Enter Verify Code",
+    "verify_code_error": "Verification code error!",
+    "user_not_exit": "Email or ID not found!",
+    "incorrect_password": "Password is incorrect!"
+  },
+  "dashboard": "Dashboard",
+  "academic_name": "Academic",
+  "academic": {
+    "programmes": "Programmes",
+    "departments": "Departments",
+    "courses": "Courses",
+    "teachers": "Teachers",
+    "students": "Students",
+    "feedbacks": "Feedbacks"
+  },
+  "admin_name": "Administrative",
+  "admin": {
+    "admin_departments": "Admin Departments",
+    "staffs": "Staffs"
+  },
+  "downloads": "Downloads",
+  "admin_downloads": "Downloads",
+  "academic_downloads": "Downloads",
+  "setting": "Setting",
+  "logout": "Logout",
+  "change_password": "Change Password",
+  "return": "Return",
+  "p_id": "Code",
+  "p_name": "Name",
+  "p_intro": "Introduction",
+  "p_dep": "Department",
+  "p_rating": "Rating",
+  "forgot_password": {
+    "name": "Forgot Password",
+    "new_password": "New Password",
+    "comfirm_password": "Comfirm Password",
+    "msg_success": "Change Password Successfully!",
+    "req_msg_comfirm_password": "Comfirm Password is empty.",
+    "min_msg": "Comfirm Password must be at least 6 digits",
+    "p_not_eql": "Password is not equal!",
+    "send_again": "Send Again",
+    "email": "Email",
+    "req_msg_email": "Email is empty!",
+    "min_msg_email": "Email must be at least 3 digits!",
+
+    "send_done": "Send Successfully!",
+    "send_done_detail": "We've send to your email, please check your email!."
+  },
+  "submit": "Submit",
+  "admin_department": {
+    "name": "Department Name",
+    "introduction": "Introduction",
+    "action": "Action",
+    "create_department": "Create Admin Department",
+    "name_req": "Name is empty!",
+    "name_min_msg": "Name must be at least 3 digits!",
+    "introduction_req": "Introduction is empty!",
+    "introduction_min_msg": "Introduction must be at least 3 digits!",
+    "created_admin_department": "Add Admin Department Successfully!",
+
+    "edit": "Edit Admin Department",
+    "updated_admin_department": "Updated Admin Department Successfully!"
+  },
+  "staffs": {
+    "edit_staff": "Edit Staff",
+    "avatar": "Avatar",
+    "staffId": "Staff ID",
+    "email": "Email",
+    "name": "Name",
+    "fullName": "FullName",
+    "admin_department": "Department",
+    "action": "Action",
+    "create_staff": "Create Staff",
+
+    "dateOfAdmission": "Date Of Admission",
+    "gender": "Gender",
+
+    "name_req": "Name is require!",
+    "name_min_msg": "Name must be at least 3 digits!",
+
+    "staffId_req": "Staff ID is require!",
+    "staffId_min_msg": "Staff ID must be at least 3 digits!",
+
+    "email_req": "Email is require!",
+    "email_min_msg": "Email must be at least 3 digits!",
+
+    "password": "Password",
+    "password_req": "Password is require!",
+    "password_min_msg": "Password must be at least 6 digits!",
+
+    "fullName_req": "fullName is require!",
+    "fullName_min_msg": "fullName must be at least 3 digits!",
+
+    "admin_department_req": "Department is require!",
+    "admin_department_min_msg": "Department must be at least 3 digits!",
+    "select_department": "Select a Department",
+
+    "select_gender": "Select a gender",
+
+    "dateOfAdmission_req": "Date Of Admission is require!",
+    "dateOfAdmission_min_msg": "Date Of Admission must be at least 3 digits!",
+
+    "created_staff": "Added Staff Successfully!",
+    "edit": "Edit",
+    "updated_staff": "Updated Staff Successfully!",
+
+    "profile": {
+      "view_profile": "View Profile",
+      "add_profile": "Add Profile",
+      "edit_profile": "Edit Profile",
+      "dateOfBirth": "Date Of Birth",
+      "dateOfBirth_req": "Date Of Birth is empty!",
+
+      "language": "Language",
+      "language_req": "Language is empty!",
+      "language_min_msg": "Language must be at least 3 digits!",
+
+      "nationality": "Nationality",
+      "nationality_req": "Nationality is empty!",
+      "nationality_min_msg": "Nationality must be at least 3 digits!",
+
+      "passportNo": "PassportNo / NRC No",
+      "passportNo_req": "PassportNo / NRC No is empty!",
+      "passportNo_min_msg": "PassportNo / NRC No must be at least 3 digits!",
+
+      "placeOfBirth": "Place Of Birth",
+      "placeOfBirth_req": "Place Of Birth is empty!",
+      "placeOfBirth_min_msg": "Place Of Birth must be at least 3 digits!",
+
+      "parentName": "Parent Name / Father Name",
+      "parentName_req": "parentName is empty!",
+      "parentName_min_msg": "parentName must be at least 3 digits!",
+
+      "phoneNo": "Phone No",
+      "phoneNo_req": "phoneNo is empty!",
+      "phoneNo_min_msg": "phoneNo must be at least 3 digits!",
+
+      "currentPosition": "Current Position",
+      "currentPosition_req": "currentPosition is empty!",
+      "currentPosition_min_msg": "currentPosition must be at least 3 digits!",
+
+      "hobby": "Hobby",
+      "hobby_req": "hobby is empty!",
+      "hobby_min_msg": "hobby must be at least 3 digits!"
+    },
+    "education": {
+      "add_education": "Add Education",
+      "school": "School",
+      "school_req": "School is empty!",
+      "school_min_msg": "School must be at least 3 digits!",
+      "degree": "Degree",
+
+      "degree_req": "Degree is empty!",
+      "degree_min_msg": "Degree must be at least 3 digits!",
+
+      "fieldOfStudy": "Field Of Study",
+      "fieldOfStudy_req": "Field Of Study is empty!",
+      "fieldOfStudy_min_msg": "Field Of Study must be at least 3 digits!",
+
+      "from": "From",
+      "from_req": "From is empty!",
+
+      "current": "Current",
+      "to": "To",
+
+      "description": "Description",
+      "description_req": "Description is empty!",
+      "description_min_msg": "Description must be at least 3 digits!"
+    },
+    "experience": {
+      "add_experience": "Add Experience",
+      "title": "Title",
+      "title_req": "Title is empty!",
+      "title_min_msg": "Title must be at least 3 digits!",
+
+      "company": "Company",
+      "company_req": "Company is empty!",
+      "company_min_msg": "Company must be at least 3 digits!",
+
+      "location": "Location",
+      "location_req": "Company is empty!",
+      "location_min_msg": "Company must be at least 3 digits!",
+      "from": "From",
+      "from_req": "From is empty!",
+
+      "current": "Current",
+      "to": "To",
+
+      "description": "Description",
+      "description_req": "Description is empty!",
+      "description_min_msg": "Description must be at least 3 digits!"
+    }
+  },
+
+  "action": "Action",
+  "search": "Search",
+  "reset": "Reset",
+  "edit": "Edit",
+  "delete": "Delete",
+  "ok": "Ok",
+  "no": "No",
+  "make_sure_delete": "Are you Sure to Delete？",
+  "deleted_successfully": "Delete Successfully!",
+  "added_successfully": "Added Successfully!",
+  "empty_msg": "Please fill the value!",
+  "year": "Year",
+  "education": "Education",
+  "experience": "Experience",
+  "type": "Type",
+  "lecturer": "Lecturer",
+
+  "profile": "Profile",
+  "grade": "Grade",
+  "course": "Course",
+  "feedback": "Feedback"
+}

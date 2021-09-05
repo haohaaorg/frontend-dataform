@@ -1,0 +1,14 @@
+.ant-menu-horizontal {
+  line-height: 46px;
+  border: 0;
+  border-bottom: 1px solid none;
+  box-shadow: none;
+}
+.notice {
+  display: block;
+  width: 100px;
+  margin: 10px auto;
+}
+.notice ul {
+  display: inline-block;
+}
