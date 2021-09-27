@@ -1,28 +1,39 @@
-import React, { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
-import logo from "./logo.svg";
+import React, { Fragment, useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import Routes from "./routes/Routes";
+import "tailwindcss/tailwind.css";
+
+import { LOGOUT } from "../src/actions/types";
+// Redux
+import { Provider } from "react-redux";
+import store from "./store";
+
 import "./App.css";
-import { Button } from "./components/Elements";
-import LanguageChanger from "./components/LanguageChanger";
+import { loadUser } from "./actions/auth";
 
-function App() {
-  const [loading, setLoading] = useState(true);
-  const { t } = useTranslation();
-
+const App = () => {
   useEffect(() => {
-    setLoading(false);
-  }, []);
+    // check for token in LS
 
+    store.dispatch(loadUser());
+
+    // log user out from all tabs if they log out in one tab
+    window.addEventListener("storage", () => {
+      if (!localStorage.token) store.dispatch({ type: LOGOUT });
+    });
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className={"title"}>{t("hello")} </h1>
-        <Button variant={"primary"}> {t("test")} </Button>
-      </header>
-      {!loading && <LanguageChanger />}
-    </div>
+    <Provider store={store}>
+      <Router>
+        <Fragment>
+          <Switch>
+            <Route component={Routes} />
+          </Switch>
+        </Fragment>
+      </Router>
+    </Provider>
   );
-}
+};
 
 export default App;

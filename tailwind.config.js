@@ -1,18 +1,34 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  mode: "jit",
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: false, // or 'media' or 'class'
+  purge: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        sans: ["Noto Sans", ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        gray: {
+          1: "#E0E0E0",
+          2: "#F2F2F2",
+          3: "#828282",
+          4: "#4F4F4F",
+          5: "#BDBDBD",
+          6: "#333333",
+          dark: "#252329",
+        },
+        blue: {
+          1: "#2F80ED",
+        },
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [],
 };

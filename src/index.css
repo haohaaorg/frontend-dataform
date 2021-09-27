@@ -3,15 +3,49 @@
 @tailwind utilities;
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @apply dark:bg-gray-dark;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.input-group {
+  @apply mb-3;
+}
+
+.input-label-icon {
+  @apply flex items-center group border transition border-gray-5 p-2 focus-within:border-gray-3 rounded-lg;
+}
+
+.input-label-icon input {
+  @apply pl-2 text-gray-6 dark:text-gray-5 outline-none bg-transparent;
+}
+
+.input-label-icon svg {
+  @apply fill-current text-gray-3 cursor-pointer w-4 h-4 md:w-5 md:h-5;
+}
+
+.btn-submit {
+  @apply mt-3 p-2 flex items-center justify-center bg-blue-1 outline-none focus:outline-none text-white rounded-lg;
+}
+
+.entry-info {
+  @apply md:px-6 lg:px-12 py-3 md:py-6 border-b flex items-center justify-between;
+}
+
+.entry-label {
+  @apply w-4/12 uppercase flex items-center text-xs text-gray-3 dark:text-gray-5;
+}
+
+.entry-value {
+  @apply w-8/12 flex leading-tight text-gray-6 dark:text-white items-center justify-end md:justify-start;
+}
+
+.shadow-in-dark {
+  box-shadow: 1px 1px 5px #bdbdbd;
+}
+
+.form-group {
+  @apply md:px-6 lg:px-12 py-2 md:py-4 flex flex-col;
+}
+.form-group input,
+.form-group textarea {
+  @apply p-2 md:px-4 border border-gray-5 outline-none focus:outline-none dark:text-white rounded-lg bg-transparent;
 }
