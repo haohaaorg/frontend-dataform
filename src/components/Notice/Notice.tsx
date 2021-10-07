@@ -5,8 +5,6 @@ import { Tabs, Dropdown, Badge, Spin, List, Avatar, Tag } from "antd";
 // import { ReactComponent as NoticeSvg } from '../../asset/icon/notice.svg';
 import { LoadingOutlined } from "@ant-design/icons";
 import { NotificationIcon } from "../../components/Icons";
-import { GET_ME } from "../../graphql/user";
-import { UPDATE_NOTIFICATION_SEEN } from "../../graphql/notification";
 // import { getNoticeList } from 'api/layout.api';
 import "./style.less";
 

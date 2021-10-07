@@ -2,7 +2,7 @@ import { useQuery } from "@apollo/client";
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { Route, Redirect } from "react-router-dom";
-import { GET_ME } from "../../graphql/user";
+// import { GET_ME } from "../../graphql/user";
 import Loading from "../Loading";
 import { loadUser } from "../../actions/auth";
 
@@ -12,31 +12,27 @@ const PrivateRoute = ({
   loadUser,
   ...rest
 }: any) => {
-  const { data, loading, error } = useQuery(GET_ME);
-  useEffect(() => {
-    if (!error && data?.getMe?.user) {
-      loadUser(data?.getMe?.user);
-    }
-  }, [data?.getMe?.user]);
+  // const { data, loading, error } = useQuery(GET_ME);
+  // useEffect(() => {
+  //   if (!error && data?.getMe?.user) {
+  //     loadUser(data?.getMe?.user);
+  //   }
+  // }, [data?.getMe?.user]);
 
-  if (loading) {
-    return <Loading />;
-  }
-  if (!data && error) {
-    return <Loading />;
-  }
+  // if (loading) {
+  //   return <Loading />;
+  // }
+  // if (!data && error) {
+  //   return <Loading />;
+  // }
 
-  const { getMe } = data;
+  // const { getMe } = data;
 
   return (
     <Route
       {...rest}
       render={(props) =>
-        !getMe?.user ? (
-          <Redirect to="/login"></Redirect>
-        ) : (
-          <Component {...props} />
-        )
+        ![] ? <Redirect to="/login"></Redirect> : <Component {...props} />
       }
     />
   );

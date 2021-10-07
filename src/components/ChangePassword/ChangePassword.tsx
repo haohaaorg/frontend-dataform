@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Input, message, Button } from "antd";
 import { Redirect, useParams } from "react-router";
-import { CHANGE_PASSWORD } from "../../graphql/password";
+// import { CHANGE_PASSWORD } from "../../graphql/password";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
