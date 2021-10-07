@@ -1,0 +1,184 @@
+#components-form-demo-normal-login .login-form {
+    max-width: 300px;
+  }
+  #components-form-demo-normal-login .remember-me {
+    float: right;
+  }
+  #components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+    float: left;
+  }
+  #components-form-demo-normal-login .login-form-button {
+    width: 100%;
+  }
+
+  .ant-form-item-control-input-content {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    max-width: 100%;
+}
+
+
+.login-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 240px;
+      height: 348px;
+      padding: 10px 70px 40px;
+      box-sizing: content-box;
+      .logo {
+          text-align: center;
+          img {
+              width: 120px;
+              text-align: center;
+              padding: 0.2rem;
+              margin: 0.2rem;
+          }
+      }
+
+      .login-form-forgot {
+        float: right;
+      }
+
+
+  
+      .l-box{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transition: all 1s;
+          backface-visibility: hidden;
+          // color: #22ddbb;
+          padding: 12px 40px 40px;
+          @media screen and (max-width: 680px) { 
+            padding: 12px 70px 40px;
+         }
+        //   border: 1px solid #f2f2f2;
+          // box-shadow: -15px 15px 15px rgba(0, 0, 0, .4);
+          // transform: rotateY(180deg);
+          &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              padding: 12px 40px 40px;
+              // background: linear-gradient(230deg, rgba(53, 57, 74, 0), #000);
+              // opacity: .8;
+              z-index: -1;
+          }
+  
+          &.active {
+              transform: rotateY(0deg);
+              padding: 12px 40px 40px;
+              // border: 1px solid red;
+          }
+  
+          .title {
+              height: 60px;
+              color: #666;
+              font-size: 16px;
+              margin-bottom: 0;
+              font-weight: 500;
+              text-align: center;
+          }
+  
+          .iconfont {
+              color: #000000;
+              opacity: .6;
+          }
+  
+          .myInput.ant-input {
+              // background-color: transparent;
+              color: #666666;
+              outline: #f2f2f2;
+              // border: none;
+              // box-shadow: none;
+              padding-right: 0;
+          }
+  
+          .btn-box {
+              display: flex;
+              height: 42px;
+              justify-content: space-between;
+              align-items: center;
+              // border: 1px solid green
+  
+              .registerBtn {
+                  &:hover {
+                      color: #007bfe;
+                  }
+  
+                  cursor: pointer;
+                  color: #D3D7F7;
+              }
+  
+              .loginBtn {
+                  &:hover {
+                      color: white;
+                      background: #0c62be;
+  
+                  }
+  
+                  cursor: pointer;
+                  padding: 10px 50px;
+                  margin: 1px auto;
+                  color: #ffff;
+                //   border: 2px solid #007bfe;
+                  border-radius: 50px;
+                  background: transparent;
+                  font-size: 11px;
+                   background: #007bfe;
+                  transition: all .2s;
+                  height: 100%;
+                  line-height: 1.44rem;
+              }
+  
+          }
+  
+          .footer {
+              position: absolute;
+              bottom: 20px;
+              left: 35px;
+              width: 250px;
+              color: #d3d7f7;
+              font-size: 10px;
+              font-weight: 600;
+          }
+  
+          //覆盖antd样式，注意只覆盖此页面antd的样式，而其他页面的antd不会被覆盖
+          .ant-col {
+              right: 0%; //过渡要有初始值，否则无效
+              transition: all .3s;
+              // border: 1px solid blue;
+          }
+  
+          .ant-col-pull-1 {
+              right: 4.16666667%; //为什么这里又写一遍？因为上面的优先级会覆盖antd，所以这里在写一遍提高优先级
+          }
+  
+          .ant-form-explain {
+              position: absolute;
+              z-index: 99;
+              left: 110%;
+              top: 0;
+              height: 41px;
+             
+          }
+  
+          /*更改谷歌浏览器input背景*/
+          input:-webkit-autofill,
+          input:-webkit-autofill:hover,
+          input:-webkit-autofill:focus,
+          input:-webkit-autofill:active {
+              /*延迟背景颜色载入*/
+              -webkit-transition-delay: 99999s;
+              -webkit-transition: color 99999s ease-out, background-color 99999s ease-out;
+          }
+      }
+  }

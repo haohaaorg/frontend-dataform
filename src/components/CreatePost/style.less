@@ -1,0 +1,203 @@
+// @import '../../../../styles/base.scss';
+html,
+body {
+  max-width: 100%;
+  /* overflow-x: hidden; */
+}
+
+.ck-content .image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  /* min-width: 50px; */
+}
+
+.btn {
+    margin: 1rem 0rem;
+    // position: absolute;
+    // top: 0px;
+    // left: 888px;
+    // margin-left: 60rem;
+    display: inline;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.6rem;
+    background-color: #007bff;
+    border-radius: 20px;
+    color: #ffff;
+}
+
+.main-panel{
+  width: 876px;
+    //  @include respond-to(sm) {
+    //   width: 100%;
+    // }
+  margin: 30px auto;
+  .d-title{
+    line-height: 50px;
+    width: 100%;
+    text-indent: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: none;
+    outline: 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 20px;
+    transition: border-color 0.1s ease
+   }
+   .select-dev{
+    list-style: none;
+    position: relative;
+   //  vertical-align: middle;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 0.6rem 0.8rem;
+    line-height: 36px;
+  }
+  .list-topic{
+    position: absolute;
+    top: 2.6 rem;
+    border: 1px solid #007bff;
+    background-color: #fefefefe;
+    border-radius: 0.6rem;
+
+    padding: 0rem;
+    color: #333333;
+    list-style: none;
+    z-index: 333;
+    li{
+      text-align: center;
+      cursor: pointer;
+      padding: 0.2rem 2rem;
+      border-bottom: 1px solid #ddd;
+    }
+    li:hover{
+      width: 100%;
+      color:#007bff;
+    }
+  }
+  .list-lang{
+    position: absolute;
+    top: 3.2rem;
+    border: 1px solid #007bff;
+    background-color: #fefefefe;
+    border-radius: 0.6rem;
+
+    padding: 0rem;
+    color: #333333;
+    list-style: none;
+    z-index: 22;
+    li{
+      text-align: center;
+      cursor: pointer;
+      padding: 0.2rem 2rem;
+      border-bottom: 1px solid #ddd;
+    }
+    li:hover{
+      width: 100%;
+      color:#007bff;
+    }
+  }
+  .topics-tag{
+    width: 100%;
+    // border: 1px solid red;
+    padding: 2rem 0rem;
+    // display: flex;
+  }
+  .topic-menu{
+    ul{
+      list-style: none;
+    }
+    cursor: pointer;
+    text-indent: 1em;
+    font-size: 14px;
+    padding: 0.4rem;
+    background: transparent;
+    height: 36px;
+
+    margin: 2px 0px;
+    padding: 0px 8px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #888888;
+    background-image: none;
+    border: none;
+  }
+}
+.ql-editor {
+  max-height: 400px;
+  p {
+    font-family: padauk, myanmar3, pyidaungsu, 'noto sans myanmar';
+  }
+}
+.ql-insertStar{
+  color: #999;
+}
+.quill > .ql-container > .ql-editor.ql-blank::before{
+  font-size: 16px;
+  color: #999;
+  font-style: normal;
+}
+.quill-blur {
+  display: none;
+}
+.ql-toolbar.ql-snow {
+  /* border: 1px solid #ccc; */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #f2f2f2;
+
+  
+}
+img {
+  cursor: pointer;
+}
+.ql-container.ql-snow {
+  border: none;
+}
+.ql-snow .ql-stroke {
+  fill: none;
+  stroke: #999;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+@media screen and (min-width: 0) and (max-width: 991px) {
+  .edit-focus .quill {
+    position: absolute;
+    top: 0;
+    height: 226px;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1;
+  }
+  .edit-focus .quill-blur {
+    display: block;
+    position: absolute;
+    top: 226px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1;
+  }
+  .edit-focus .ql-editor {
+    height: 160px;
+    border-bottom: 1px solid #ccc;
+  }
+  .edit-focus .navbar {
+    display: none;
+  }
+  .edit-focus .main-panel {
+    padding: 0 !important;
+  }
+  .edit-focus .main-panel .main-content {
+    min-height: unset !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}

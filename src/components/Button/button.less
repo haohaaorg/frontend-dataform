@@ -1,0 +1,50 @@
+
+/**
+ * Button styles
+ */
+
+/* resetting all default button styles */
+button {
+      background: none;
+      border: 0;
+      color: inherit;
+      font: inherit;
+      line-height: normal;
+      overflow: visible;
+      padding: 0;
+      user-select: none;
+      outline: none;
+      cursor: pointer;
+    }
+    
+    .buttonDefaults {
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+    
+    .default {
+      color: #999;
+      transition: color 0.3s;
+      &:hover { color: #000; }
+    }
+    
+    .outline {
+      color: #999;
+      border: 1px solid #e8e8e8;
+      transition: color 0.3s, border 0.3s;
+      &:hover {
+        color: primaryFontColor;
+        border: 1px solid #999999;
+      }
+    }
+    
+    .fullWidth { width: 100%; }
+    .noUppercase { text-transform: none; }
+    .alwaysActive {
+      color: #999;
+      border-color: #999999;
+    }
+    
